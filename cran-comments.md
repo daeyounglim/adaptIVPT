@@ -28,7 +28,7 @@ this really necessary? If not please unwrap or put it in \donttest if it
 takes > 5 sec. If this is needed here, please explain in the example why
 that is.
 
-`PRsurface` visualizes a 3D surface, using `persp3d` of {rgl} under the hood. {rgl} provides an interactive viewpoint navigation (e.g., rotating the 3D object, zooming in and out with the mouse wheel, etc). It doesn't take more than 5 seconds but it had to be suppressed without interactivity. I can change it to \donttest if explicitly asked, but as far as I know, CRAN reserves this for when the test takes more than 5 seconds, which the example doesn't satisfy.
+This example doesn't take more than 5 seconds, but `PRsurface`  does generate an interactive figure, using `persp3d` of {rgl} under the hood. I've added `plot=FALSE` as an argument so plotting is suppressed in the example.
 
 > Please ensure that you do not use more than 2 cores in your examples, vignettes, etc.
 
