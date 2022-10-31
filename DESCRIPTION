@@ -1,0 +1,26 @@
+Package: adaptIVPT
+Type: Package
+Title: Adaptive Bioequivalence Design for In-Vitro Permeation Tests for Pharmacokinetics with Mixed Scaling Approach
+Version: 1.0
+Date: 2022-10-30
+Authors@R: c(
+        person("Daeyoung", "Lim", email = "daeyoung.lim@uconn.edu",
+        role = c("aut", "cre")),
+        person("Elena", "Rantou", email = "Elena.Rantou@fda.hhs.gov", role = "ctb"),
+        person("Jessica", "Kim", email = "Jessica.Kim@fda.hhs.gov", role = "ctb"),
+        person("Sungwoo", "Choi", email = "Sungwoo.Choi@fda.hhs.gov", role = "ctb"),
+        person("Nam Hee", "Choi", email = "NamHee.Choi@fda.hhs.gov", role = "ctb"))
+Maintainer: Daeyoung Lim <daeyoung.lim@uconn.edu>
+Description: Contains functions carrying out adaptive procedures using mixed scaling approach to test bioequivalence for in-vitro permeation test (IVPT) data. Currently, the package provides procedures based on parallel replicate design and balanced data. This package reflects the views of the authors and should not be construed to represent FDA's views or policies.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyLoad: yes
+LazyData: true
+RoxygenNote: 7.2.1
+NeedsCompilation: yes
+Imports: Rcpp, rgl
+Depends: R (>= 3.4)
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress
+Suggests: 
+    knitr,
+    rmarkdown

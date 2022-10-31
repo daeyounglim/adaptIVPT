@@ -1,0 +1,7 @@
+^\.travis\.yml$
+^cran-comments\.md$
+^README\.md$
+^README-.*\.png$
+^.*\.Rproj$
+^\.Rproj\.user$
+^CONTRIBUTING\.md$
