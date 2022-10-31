@@ -1,6 +1,5 @@
 ^\.travis\.yml$
 ^cran-comments\.md$
-^NEWS\.md$
 ^README\.md$
 ^README-.*\.png$
 ^.*\.Rproj$
