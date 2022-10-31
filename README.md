@@ -31,6 +31,7 @@ If you encounter a clear bug, please file an issue with a minimal reproducible e
 + Jessica Kim <Jessica.Kim@fda.hhs.gov>
 + Sungwoo Choi <Sungwoo.Choi@fda.hhs.gov>
 + Nam Hee Choi <NamHee.Choi@fda.hhs.gov>
++ Stella Grosser <Stella.Grosser@fda.hhs.gov>
 
 ## ⚠️ Disclaimer
 This package reflects the views of the authors and ***should not*** be construed to represent the FDA's views or policies.
