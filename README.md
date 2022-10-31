@@ -1,3 +1,6 @@
+[![R-CMD-check](https://github.com/daeyounglim/adaptIVPT/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/daeyounglim/adaptIVPT/actions/workflows/R-CMD-check.yaml)
+
+
 ## adaptIVPT
 
 + `adaptIVPT` is an R package that will help you design and analyze in vitro permeation test (IVPT) data (currently supports parallel replicate design and balanced data).
