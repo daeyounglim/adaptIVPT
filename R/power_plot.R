@@ -19,7 +19,8 @@
 #' 
 #' @param nsim (Optional) The number of total simulations to be conducted. Defaults to 1,000.
 #' @param ncores (Optional) The number of CPU cores to use for parallel processing (OpenMP). If R hasn't been installed with OpenMP configured, this will not take effect. When OpenMP is available, it should not exceed the number of existing cores. If unspecified, it will default to 2 cores or the number of existing cores, whichever is smaller.
-#' @param verbose (Optional) A logical value (TRUE/FALSE) indicating whether to display the progress bar.
+#' @param verbose (Optional) A logical value (`TRUE`/`FALSE`) indicating whether to display the progress bar.
+#' @param plot (Optional) A logical value (`TRUE`/`FALSE`) indicating whether to generate a 3D interactive plot of the surface. If `FALSE`, the function will return the (x, y, z) values as a `list`.
 #' @references
 #' Davit, B. M., Chen, M. L., Conner, D. P., Haidar, S. H., Kim, S., Lee, C. H., Lionberger, R. A., Makhlouf, F. T., Nwakama, P. E., Patel, D. T., Schuirmann, D. J., & Yu, L. X. (2012). Implementation of a reference-scaled average bioequivalence approach for highly variable generic drug products by the US Food and Drug Administration. The AAPS journal, 14(4), 915-924.
 #' 
@@ -30,16 +31,14 @@
 #' + `runtime` - The total elapsed time charged for the execution of the program.
 #' 
 #' @examples
-#' if(interactive()) {
-#' out <- PRsurface(6, 3, GMR_grid=c(0.90, 1), sigmaWR_grid=c(0.2, 0.5), nsim=2)
-#' }
+#' out <- PRsurface(6, 3, GMR_grid = c(0.90, 1), sigmaWR_grid = c(0.2, 0.5), nsim = 2, plot = FALSE)
 #' 
 #' @md
 #' @importFrom rgl persp3d plot3d
 #' @importFrom utils setTxtProgressBar txtProgressBar
 #' @export
 PRsurface <- function(n, r, observed_GMR = 0.95, observed_sigmaWR = 0.294, GMR_grid = seq(0.75, 1.30, length.out = 100), sigmaWR_grid = seq(0.2, 1, length.out = 100),
-                      params = list(), nsim = 1000, ncores = NULL, verbose=FALSE) {
+                      params = list(), nsim = 1000, ncores = NULL, verbose = FALSE, plot = TRUE) {
     parameters <- list(sigma_W0 = 0.25, sigma_WT = 0.5, sigma_WR = 0.5, GMR = 0.95,
                        m = 1.25, sig_level = 0.05)
     parameters[names(params)] <- params
@@ -65,11 +64,13 @@ PRsurface <- function(n, r, observed_GMR = 0.95, observed_sigmaWR = 0.294, GMR_g
     if (verbose) {
         close(pb)
     }
-    persp3d(GMR_grid, sigmaWR_grid, z, main="Passing Rate Surface",
-            zlab = "Passing Rate", xlab="GMR", ylab=expression(sigma[WR]),
-            theta = 30, phi = 15, col = "orange", shade = 0.4)
-    ml <- max(length(GMR_grid), length(sigmaWR_grid))
-    observed_pr <- prms(n, r, list(sigma_WR=observed_sigmaWR, sigma_WT = observed_sigmaWR, GMR = observed_GMR))$passing_rate
-    plot3d(rep(observed_GMR, ml), rep(observed_sigmaWR, ml), seq(0, observed_pr, length.out = ml), type = 'l', col="red", lwd = 2, add = TRUE)
+    if (plot) {
+        persp3d(GMR_grid, sigmaWR_grid, z, main="Passing Rate Surface",
+                zlab = "Passing Rate", xlab="GMR", ylab=expression(sigma[WR]),
+                theta = 30, phi = 15, col = "orange", shade = 0.4)
+        ml <- max(length(GMR_grid), length(sigmaWR_grid))
+        observed_pr <- prms(n, r, list(sigma_WR=observed_sigmaWR, sigma_WT = observed_sigmaWR, GMR = observed_GMR))$passing_rate
+        plot3d(rep(observed_GMR, ml), rep(observed_sigmaWR, ml), seq(0, observed_pr, length.out = ml), type = 'l', col="red", lwd = 2, add = TRUE)
+    }
     invisible(list(GMR = GMR_grid, sigmaWR = sigmaWR_grid, z = z))
 }

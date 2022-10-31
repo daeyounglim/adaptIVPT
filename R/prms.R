@@ -25,7 +25,7 @@
 #' + `runtime` - The total elapsed time charged for the execution of the program.
 #' 
 #' @examples
-#' out <- prms(10, 6, nsim=2)
+#' out <- prms(10, 6, nsim = 2)
 #' 
 #' @md
 #' @export

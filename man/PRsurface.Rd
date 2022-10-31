@@ -14,7 +14,8 @@ PRsurface(
   params = list(),
   nsim = 1000,
   ncores = NULL,
-  verbose = FALSE
+  verbose = FALSE,
+  plot = TRUE
 )
 }
 \arguments{
@@ -44,7 +45,9 @@ PRsurface(
 
 \item{ncores}{(Optional) The number of CPU cores to use for parallel processing (OpenMP). If R hasn't been installed with OpenMP configured, this will not take effect. When OpenMP is available, it should not exceed the number of existing cores. If unspecified, it will default to 2 cores or the number of existing cores, whichever is smaller.}
 
-\item{verbose}{(Optional) A logical value (TRUE/FALSE) indicating whether to display the progress bar.}
+\item{verbose}{(Optional) A logical value (\code{TRUE}/\code{FALSE}) indicating whether to display the progress bar.}
+
+\item{plot}{(Optional) A logical value (\code{TRUE}/\code{FALSE}) indicating whether to generate a 3D interactive plot of the surface. If \code{FALSE}, the function will return the (x, y, z) values as a \code{list}.}
 }
 \value{
 A list
@@ -58,9 +61,7 @@ A list
 This function plots the power (passing-rate) curve and power (passing-rate) surface of the mixed scaling (MS) approach. A power curve shows the statistical power across different effect sizes. In IVPT studies, the effect size is captured by the difference between the means of log-measurements of the test and reference products (i.e., logGMR). For the passing-rate surface, the corresponding function considers different values of the standard deviation.
 }
 \examples{
-if(interactive()) {
-out <- PRsurface(6, 3, GMR_grid=c(0.90, 1), sigmaWR_grid=c(0.2, 0.5), nsim=2)
-}
+out <- PRsurface(6, 3, GMR_grid = c(0.90, 1), sigmaWR_grid = c(0.2, 0.5), nsim = 2, plot = FALSE)
 
 }
 \references{

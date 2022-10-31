@@ -39,7 +39,7 @@ A list of lists
 This function reestimates the sample size using mixed criterion required for target power, using binary search. The power (passing rate) function of mixed criterion testing lacks a closed-form expression. Thus, sample size (re-)estimation requires a binary search, after identifying an \code{n} where the passing rate exceeds the desired level.
 }
 \examples{
-out <- rss(10, 6, S_WR=0.22, nsim=2)
+out <- rss(10, 6, S_WR = 0.22, nsim = 2)
 
 }
 \references{

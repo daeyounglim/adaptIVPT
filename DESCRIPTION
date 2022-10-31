@@ -15,7 +15,6 @@ Description: Contains functions carrying out adaptive procedures using mixed sca
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyLoad: yes
-LazyData: true
 RoxygenNote: 7.2.1
 NeedsCompilation: yes
 Imports: Rcpp, rgl

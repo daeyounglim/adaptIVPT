@@ -32,8 +32,8 @@ This function runs hypothesis testing for bioequivalence using the mixed criteri
 \examples{
 n <- 6
 r <- 3
-Test <- matrix(runif(n*r), nrow=n, ncol=r)
-Reference <- matrix(runif(n*r), nrow=n, ncol=r)
+Test <- matrix(runif(n*r), nrow = n, ncol = r)
+Reference <- matrix(runif(n*r), nrow = n, ncol = r)
 out <- msabe(Test, Reference)
 
 }

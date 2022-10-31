@@ -37,7 +37,7 @@ A list of lists
 This function runs Monte Carlo simulations to compute the passing rate (PR) of the mixed scaling (MS) approach.
 }
 \examples{
-out <- prms(10, 6, nsim=2)
+out <- prms(10, 6, nsim = 2)
 
 }
 \references{
