@@ -1,7 +1,7 @@
 Package: adaptIVPT
 Type: Package
 Title: Adaptive Bioequivalence Design for In-Vitro Permeation Tests for Pharmacokinetics with Mixed Scaling Approach
-Version: 1.0
+Version: 1.0.0
 Date: 2022-10-30
 Authors@R: c(
         person("Daeyoung", "Lim", email = "daeyoung.lim@uconn.edu",
