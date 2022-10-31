@@ -22,7 +22,7 @@ install.packages("adaptIVPT")
 ```
 
 ## Getting help
-If you encounter a clear bug, please file an issue with a minimal reproducible example on GitHub. For questions and other discussion, please email the [maintainer](daeyoung.lim@uconn.edu).
+If you encounter a clear bug, please file an issue with a minimal reproducible example on [GitHub](https://github.com/daeyounglim/adaptIVPT/issues). For questions and other discussion, please email the [maintainer](daeyoung.lim@uconn.edu).
 
 
 ## Authors
