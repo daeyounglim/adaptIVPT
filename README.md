@@ -30,4 +30,4 @@ If you encounter a clear bug, please file an issue with a minimal reproducible e
 + Nam Hee Choi <NamHee.Choi@fda.hhs.gov>
 
 ## ⚠️ Disclaimer
-This package reflects the views of the authors and ***should not*** be construed to represent FDA's views or policies.
+This package reflects the views of the authors and ***should not*** be construed to represent the FDA's views or policies.

@@ -42,6 +42,9 @@ This function reestimates the sample size using mixed criterion required for tar
 out <- rss(10, 6, S_WR=0.22, nsim=2)
 
 }
+\references{
+Potvin, D., DiLiberti, C. E., Hauck, W. W., Parr, A. F., Schuirmann, D. J., & Smith, R. A. (2008). Sequential design approaches for bioequivalence studies with crossover designs. Pharmaceutical Statistics: The Journal of Applied Statistics in the Pharmaceutical Industry, 7(4), 245-262.
+}
 \author{
 Daeyoung Lim, \email{daeyoung.lim@uconn.edu}
 }

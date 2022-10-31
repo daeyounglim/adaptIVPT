@@ -1,6 +1,8 @@
+This is a resubmission.
+
 ## Test environments
-* local macOS Big Sur 11.1 R 4.1.0
-* local Windows 10, R 4.2.1.
+* local macOS Monterey 12.6 R 4.1.0
+* local Windows 10, R 4.1.3.
 * rhub check_for_cran
 * win-builder (devel, release, and oldrelease)
 
@@ -13,10 +15,13 @@ There was one NOTE on R-hub check:
 ```
 As noted in [R-hub issue #503](https://github.com/r-hub/rhub/issues/503), this could be due to a bug/crash in MiKTeX and can likely be ignored.
 
-There was 1 NOTE (This is my first submission):
-```
-checking CRAN incoming feasibility ... NOTE
-```
+## Comments
+> You have one example in PRsurface.Rd wrapped in if(interavtive()). Is
+this really necessary? If not please unwrap or put it in \donttest if it
+takes > 5 sec. If this is needed here, please explain in the example why
+that is.
+
+`PRsurface` visualizes a 3D surface, using `persp3d` of {rgl} under the hood. {rgl} provides an interactive viewpoint navigation (e.g., rotating the 3D object, zooming in and out with the mouse wheel, etc). It doesn't take more than 5 seconds but it had to be suppressed without interactivity.
 
 ## Downstream dependencies
 There are no downstream dependencies for this package.
