@@ -23,26 +23,9 @@ Maintainer: 'Daeyoung Lim <daeyoung.lim@uconn.edu>'
 as this package is not yet on CRAN.
 
 ## Responses to Comments
-> You have one example in PRsurface.Rd wrapped in if(interavtive()). Is
-this really necessary? If not please unwrap or put it in \donttest if it
-takes > 5 sec. If this is needed here, please explain in the example why
-that is.
+> Please always explain all acronyms in the description text. e.g.: FDA.
 
-This example doesn't take more than 5 seconds, but `PRsurface`  does generate an interactive figure, using `persp3d` of {rgl} under the hood. I've added `plot=FALSE` as an argument so plotting is suppressed in the example.
-
-> Please ensure that you do not use more than 2 cores in your examples, vignettes, etc.
-
-All the examples already do not use more than 2 cores. The only function that has parallel computing implemented is `prms` and it has the following code block that ensures using 2 cores unless the user explicitly passes how many cores to use:
-```r
-if (!is.null(ncores)) {
-    ncores_ <- parallel::detectCores()
-    if (ncores > ncores_) {
-        stop(paste0("The number of cores cannot exceed ", ncores_))
-    }
-} else {
-    ncores <- min(2, parallel::detectCores())
-}
-```
+It's now spelled out.
 
 ## Downstream dependencies
 There are no downstream dependencies for this package.
