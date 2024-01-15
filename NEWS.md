@@ -1,4 +1,4 @@
-# adaptIVPT v 1.0.0
+# adaptIVPT v 1.1.0
 + `msabe`
 + `rss`
 + `prms`

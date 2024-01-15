@@ -1,31 +1,31 @@
-This is a resubmission.
+This is a resubmission. In this version I have:
+
+* Removed the C++11 requirement to accommodate updates in the BH package
+* Updated the maintainer's e-mail address
+* Added a citation file
 
 ## Test environments
-* local macOS Monterey 12.6 R 4.1.0
-* local Windows 10, R 4.1.3.
-* rhub check_for_cran
-* win-builder (devel, release, and oldrelease)
+* local macOS Sonoma 14.2.1 R 4.3.2
+* R-hub builder (https://builder.r-hub.io)
+    * Windows Server 2022, R-devel, 64 bit
+        > ❯ checking CRAN incoming feasibility ... NOTE
+            Maintainer: 'Daeyoung Lim <Daeyoung.Lim@fda.hhs.gov>'****
+  
+            New maintainer:
+              Daeyoung Lim <Daeyoung.Lim@fda.hhs.gov>
+            Old maintainer(s):
+              Daeyoung Lim <daeyoung.lim@uconn.edu>
 
-## R CMD check results
-There was one NOTE on R-hub check:
-```
-* checking for detritus in the temp directory ... NOTE
- Found the following files/directories:
-  'lastMiKTeXException'
-```
-As noted in [R-hub issue #503](https://github.com/r-hub/rhub/issues/503), this could be due to a bug/crash in MiKTeX and can likely be ignored.
+        > ❯ checking for non-standard things in the check directory ... NOTE
+            Found the following files/directories:
+              ''NULL''
 
-Also,
-```
-checking CRAN incoming feasibility ... NOTE
-Maintainer: 'Daeyoung Lim <daeyoung.lim@uconn.edu>'
-```
-as this package is not yet on CRAN.
-
-## Responses to Comments
-> Please always explain all acronyms in the description text. e.g.: FDA.
-
-It's now spelled out.
+        > ❯ checking for detritus in the temp directory ... NOTE
+            Found the following files/directories:
+            'lastMiKTeXException'
+    * Ubuntu Linux 20.04.1 LTS, R-release, GCC
+    * Fedora Linux, R-devel, clang, gfortran
+    * Debian Linux, R-devel, GCC ASAN/UBSAN
 
 ## Downstream dependencies
 There are no downstream dependencies for this package.

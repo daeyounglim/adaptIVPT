@@ -15,6 +15,7 @@
 + [In Vitro Permeation Test Studies for Topical Drug Products Submitted in ANDAs](https://www.fdanews.com/ext/resources/files/2022/10-21-22-InVitroPermeationTestStudiesdraftguidance.pdf?1666376063)
 + Davit, B. M., Chen, M. L., Conner, D. P., Haidar, S. H., Kim, S., Lee, C. H., Lionberger, R. A., Makhlouf, F. T., Nwakama, P. E., Patel, D. T., Schuirmann, D. J., & Yu, L. X. (2012). Implementation of a reference-scaled average bioequivalence approach for highly variable generic drug products by the US Food and Drug Administration. The AAPS journal, 14(4), 915-924. ([link](https://doi.org/10.1208/s12248-012-9406-x))
 + Potvin, D., DiLiberti, C. E., Hauck, W. W., Parr, A. F., Schuirmann, D. J., & Smith, R. A. (2008). Sequential design approaches for bioequivalence studies with crossover designs. Pharmaceutical Statistics: The Journal of Applied Statistics in the Pharmaceutical Industry, 7(4), 245-262. ([link](https://doi.org/10.1002/pst.294))
++ Lim, D., Rantou, E., Kim, J., Choi, S., Choi, N. H., & Grosser, S. (2023). Adaptive designs for IVPT data with mixed scaled average bioequivalence. Pharmaceutical Statistics, 22(6), 1116-1134. ([link](https://doi.org/10.1002/pst.2333))
 
 ## Installation
 ```r
@@ -26,7 +27,7 @@ If you encounter a clear bug, please file an issue with a minimal reproducible e
 
 
 ## Authors
-+ Daeyoung Lim <daeyoung.lim@uconn.edu>
++ Daeyoung Lim <Daeyoung.Lim@fda.hhs.gov>
 + Elena Rantou <Elena.Rantou@fda.hhs.gov>
 + Jessica Kim <Jessica.Kim@fda.hhs.gov>
 + Sungwoo Choi <Sungwoo.Choi@fda.hhs.gov>
