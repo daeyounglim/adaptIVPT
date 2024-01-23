@@ -1,7 +1,7 @@
 #' Reestimate the sample size for the adaptive design in bioequivalence (BE) studies using mixed criterion.
 #' 
 #' This function reestimates the sample size using mixed criterion required for target power, using binary search. The power (passing rate) function of mixed criterion testing lacks a closed-form expression. Thus, sample size (re-)estimation requires a binary search, after identifying an `n` where the passing rate exceeds the desired level.
-#' @author Daeyoung Lim, \email{daeyoung.lim@uconn.edu}
+#' @author Daeyoung Lim, \email{Daeyoung.Lim@fda.hhs.gov}
 #' @param n The number of donors in each simulation.
 #' @param r The number of replicates from each donor for each simulated dataset.
 #' @param S_WR The estimated standard deviation of the reference measurements. The reference-scaled average bioequivalence approach is used if S_WR > 0.249 and the average bioequivalence approach otherwise.
@@ -28,6 +28,7 @@
 #' 
 #' @references
 #' Potvin, D., DiLiberti, C. E., Hauck, W. W., Parr, A. F., Schuirmann, D. J., & Smith, R. A. (2008). Sequential design approaches for bioequivalence studies with crossover designs. Pharmaceutical Statistics: The Journal of Applied Statistics in the Pharmaceutical Industry, 7(4), 245-262.
+#' Lim, D., Rantou, E., Kim, J., Choi, S., Choi, N. H., & Grosser, S. (2023). Adaptive designs for IVPT data with mixed scaled average bioequivalence. Pharmaceutical Statistics, 22(6), 1116-1134.
 #' 
 #' @md
 #' @export

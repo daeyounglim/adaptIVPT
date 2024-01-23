@@ -1,7 +1,7 @@
 #' Compute the passing rate for the mixed scaling approach in bioequivalence (BE) studies
 #' 
 #' This function runs Monte Carlo simulations to compute the passing rate (PR) of the mixed scaling (MS) approach.
-#' @author Daeyoung Lim, \email{daeyoung.lim@uconn.edu}
+#' @author Daeyoung Lim, \email{Daeyoung.Lim@fda.hhs.gov}
 #' @param n The number of donors in each simulation.
 #' @param r The number of replicates from each donor for each simulated dataset.
 #' @param params (Optional) The list of true parameters to be assumed in data generation.
@@ -17,6 +17,7 @@
 #' @param ncores (Optional) The number of CPU cores to use for parallel processing (OpenMP). If R hasn't been installed with OpenMP configured, this will not take effect. When OpenMP is available, it should not exceed the number of existing cores. If unspecified, it will default to 2 cores or the number of existing cores, whichever is smaller.
 #' @references
 #' Davit, B. M., Chen, M. L., Conner, D. P., Haidar, S. H., Kim, S., Lee, C. H., Lionberger, R. A., Makhlouf, F. T., Nwakama, P. E., Patel, D. T., Schuirmann, D. J., & Yu, L. X. (2012). Implementation of a reference-scaled average bioequivalence approach for highly variable generic drug products by the US Food and Drug Administration. The AAPS journal, 14(4), 915-924.
+#' Lim, D., Rantou, E., Kim, J., Choi, S., Choi, N. H., & Grosser, S. (2023). Adaptive designs for IVPT data with mixed scaled average bioequivalence. Pharmaceutical Statistics, 22(6), 1116-1134.
 #' 
 #' @return A list of lists
 #' 

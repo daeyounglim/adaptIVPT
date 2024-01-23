@@ -1,7 +1,7 @@
 #' Run the mixed scaling approach in bioequivalence (BE) studies
 #' 
 #' This function runs hypothesis testing for bioequivalence using the mixed criterion
-#' @author Daeyoung Lim, \email{daeyoung.lim@uconn.edu}
+#' @author Daeyoung Lim, \email{Daeyoung.Lim@fda.hhs.gov}
 #' @param Test An n-by-r matrix of test product data. `n` is the number of donors and `r` is the number of skin section replicates.
 #' @param Reference An n-by-r matrix of reference product data.
 #' @param params (Optional) The list of tuning parameters for running the test.
@@ -12,6 +12,7 @@
 #' 
 #' @references
 #' Davit, B. M., Chen, M. L., Conner, D. P., Haidar, S. H., Kim, S., Lee, C. H., Lionberger, R. A., Makhlouf, F. T., Nwakama, P. E., Patel, D. T., Schuirmann, D. J., & Yu, L. X. (2012). Implementation of a reference-scaled average bioequivalence approach for highly variable generic drug products by the US Food and Drug Administration. The AAPS journal, 14(4), 915-924.
+#' Lim, D., Rantou, E., Kim, J., Choi, S., Choi, N. H., & Grosser, S. (2023). Adaptive designs for IVPT data with mixed scaled average bioequivalence. Pharmaceutical Statistics, 22(6), 1116-1134.
 #' 
 #' @return A list of lists
 #' 

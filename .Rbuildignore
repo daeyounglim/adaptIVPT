@@ -7,3 +7,9 @@
 ^CONTRIBUTING\.md$
 ^CRAN-SUBMISSION$
 ^\.github$
+^\.vscode$
+cran-comments.md
+misc.md
+^CRAN-RELEASE$
+^LICENSE\.md$
+^LICENSE

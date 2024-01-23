@@ -1,7 +1,7 @@
 #' Plot the passing-rate curve and the passing-rate surface in IVPT
 #' 
 #' This function plots the power (passing-rate) curve and power (passing-rate) surface of the mixed scaling (MS) approach. A power curve shows the statistical power across different effect sizes. In IVPT studies, the effect size is captured by the difference between the means of log-measurements of the test and reference products (i.e., logGMR). For the passing-rate surface, the corresponding function considers different values of the standard deviation.
-#' @author Daeyoung Lim, \email{daeyoung.lim@uconn.edu}
+#' @author Daeyoung Lim, \email{Daeyoung.Lim@fda.hhs.gov}
 #' @param n The number of donors in each simulation.
 #' @param r The number of replicates from each donor for each simulated dataset.
 #' @param observed_GMR The observed (estimated) GMR of the user's data. Along with the observed sigmaWR, the corresponding passing rate will be displayed in the 3D plot as a vertical line parallel to the z-axis.
@@ -23,6 +23,7 @@
 #' @param plot (Optional) A logical value (`TRUE`/`FALSE`) indicating whether to generate a 3D interactive plot of the surface. If `FALSE`, the function will return the (x, y, z) values as a `list`.
 #' @references
 #' Davit, B. M., Chen, M. L., Conner, D. P., Haidar, S. H., Kim, S., Lee, C. H., Lionberger, R. A., Makhlouf, F. T., Nwakama, P. E., Patel, D. T., Schuirmann, D. J., & Yu, L. X. (2012). Implementation of a reference-scaled average bioequivalence approach for highly variable generic drug products by the US Food and Drug Administration. The AAPS journal, 14(4), 915-924.
+#' Lim, D., Rantou, E., Kim, J., Choi, S., Choi, N. H., & Grosser, S. (2023). Adaptive designs for IVPT data with mixed scaled average bioequivalence. Pharmaceutical Statistics, 22(6), 1116-1134.
 #' 
 #' @return A list
 #' 
